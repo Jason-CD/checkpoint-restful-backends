@@ -1,5 +1,5 @@
 const peoples = [];
-const url = "https://dummy-apis.netlify.app/api/contact-suggestions?count=4";
+const url = "https://dummy-apis.netlify.app/api/contact-suggestions?count=8";
 const url1 = "https://dummy-apis.netlify.app/api/contact-suggestions?count=1";
 const list = document.querySelector("#people-list");
 
@@ -37,22 +37,23 @@ function renderList() {
       <button class="delete-btn">
       x
       </button>
+      
       <div class="profil-block">
         <img class="profil-pic" src=" ${people.picture} " alt="">
         <p class="name">
-          name = ${title}${first}${last}
+          ${title}${first}${last}
         </p>
         <p class="job">
           ${people.title}
         </p>
         <p class ="mutual-connections">
-        ${people.mutualConnections} mutualConnections
+        &infin; ${people.mutualConnections} mutualConnections
         </p>
       </div>
-      <button class="connect-btn">
+      <button id="invi-btn" class="connect-btn">
       Connect
       </button>
-    </li>\n`;
+          </li>\n`;
   });
   list.innerHTML = result;
 
@@ -68,6 +69,12 @@ function renderList() {
   const pendingBtns = document.querySelectorAll(".connect-btn");
   pendingBtns.forEach((button) => {
     button.addEventListener("click", () => {
+      // pendingList = document.querySelector(".pending-inv");
+      // let count = 0;
+      // updateDisplay();
+      //function updateDisplay() {
+      //  pendingList.innerHTML = count;
+      // }
       if (button.className == "connect-btn") {
         button.innerText = "Pending";
         button.className = "pending-btn";
