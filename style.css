@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+#great-pp {
+  padding-left: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.pending-inv {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid grey;
+  border-radius: 0.3rem;
+}
+
+body {
+  background-color: lightgray;
+}
+
+.main {
+  border: 1px solid gray;
+  background-color: white;
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+}
+
+#people-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {background-image: ${backgroundImage};
+  box-shadow: 0 0 10px grey;
+  background-color: white;
+  position: relative;
+  padding: 2rem;
+  margin: 1rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.profil-block {
+}
+.name {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.job {
+  font-size: 14px;
+  color: grey;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.delete-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  opacity: 0.5;
+  color: white;
+  background-color: black;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.profil-pic {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.mutual-connections {
+  font-size: 12px;
+  color: grey;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+#invi-btn {
+  margin-top: 1rem;
+  border: 2px solid cornflowerblue;
+  color: cornflowerblue;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+}
